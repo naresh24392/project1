@@ -1,0 +1,12 @@
+<div class="div">
+  <h1 style="color: white">FZ25 Riders</h1>
+  <mat-card *ngFor = "let riders of result; let i = index">
+    <img mat-card-lg-image src="../../../../assets/arts/fz251.webp">
+    <mat-list role="list">
+      <mat-list-item role="listitem">NAME: {{riders.name}}</mat-list-item>
+      <mat-list-item role="listitem">AGE: {{riders.age}}</mat-list-item>
+      <mat-list-item role="listitem">BIKE: {{riders.bike}}</mat-list-item>
+    </mat-list>
+  </mat-card>
+</div>
+

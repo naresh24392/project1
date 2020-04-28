@@ -1,0 +1,9 @@
+.div{
+    background-image: url(../../../assets/arts/r1.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,29 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%;  
+}
+.mat-drawer
+{
+    width: 200px;
+    background-image: linear-gradient(black, gray, blue);
+}
+.mat-drawer-container   
+{
+    height: 100%;
+}
+
+.footer{
+color: white;
+background-image: linear-gradient(black, blue);
+text-align: center;
+font-size: 12pt;
+font-weight: 500;
+}
+.menu{
+    color: white;
+    /* background-image: linear-gradient(blue,black, blue); */
+    /* text-align: center; */
+    font-weight: 500;
+    padding-left: 12pt;
+}

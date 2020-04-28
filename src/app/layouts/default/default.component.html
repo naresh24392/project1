@@ -1,0 +1,34 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand">
+        <span class="navbar-toggler-icon " (click)="drawer.toggle()"></span>
+        HORSEMEN
+    </a>
+</nav> 
+<mat-drawer-container>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+        <nav class="menu">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/dashboard" style="color: white;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/posts" style="color: white;">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/events" style="color: white;">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/rides" style="color: white;">Rides</a>
+                </li>
+            </ul>
+        </nav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
+<footer>
+    <div class="footer">
+        <p>Riding Gears Mandatory</p>
+    </div>
+</footer>

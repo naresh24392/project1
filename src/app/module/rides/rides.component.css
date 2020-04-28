@@ -1,0 +1,22 @@
+.mat-card{
+  color: whitesmoke;
+  background-image: repeating-linear-gradient(blue, black, blue);
+  border-radius: 25px;
+  text-align: center;
+  width: 275px;
+}
+.div{
+  display: flex;
+}
+.images{
+  width: 220px;
+  height: 220px;
+  border-radius: 15px;
+}
+.bg{
+  background-image: url(../../../assets/arts/r15v3.jfif);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+ }
