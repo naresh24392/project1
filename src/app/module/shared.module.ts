@@ -2,21 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDividerModule, MatButtonModule, MatToolbarModule, 
          MatIconModule, MatCardModule, MatListModule, MatMenuModule, MatGridListModule} from '@angular/material';
-import { R3Component } from './components/r3/r3.component';
-import { R15Component } from './components/r15/r15.component';
-import { Mt15Component } from './components/mt15/mt15.component';
-import { Fz25Component } from './components/fz25/fz25.component';
-import { FzComponent } from './components/fz/fz.component';
+import { R3Component } from '../shared/components/r3/r3.component';
 import { RouterModule } from '@angular/router';
+
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
   declarations: [
-    R3Component,
-    R15Component,
-    Mt15Component,
-    Fz25Component,
-    FzComponent,
+    R3Component
     ],
   imports: [
     CommonModule, 
@@ -28,6 +22,8 @@ import { RouterModule } from '@angular/router';
     MatListModule, 
     MatMenuModule,
     RouterModule,
-    MatGridListModule  ]
+    MatGridListModule,
+    ChartsModule
+    ]
 })
 export class SharedModule { }

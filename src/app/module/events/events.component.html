@@ -3,31 +3,14 @@
 </div>
 <mat-drawer-container>
   <mat-drawer-content>
-    <router-outlet></router-outlet>
-       <a class="nav-link" routerLink="/R3">
+    <a class="nav-link" (click)= "onSelect(model)" *ngFor="let model of models">
       <mat-card>
-        <img class="images" src="../../../../assets/arts/R3a.jpg">
+        <p>{{model.name}}</p>
+        <img class="images" [src]="model.img">
       </mat-card>
     </a>
-    <a class="nav-link" routerLink="/R15">
-      <mat-card>
-        <img class="images" src="../../../../assets/arts/r15v3.jfif">
-      </mat-card>
-    </a>
-    <a class="nav-link" routerLink="/MT15">
-      <mat-card>
-        <img class="images" src="../../../../assets/arts/mt15.jfif">
-      </mat-card>
-    </a>
-    <a class="nav-link" routerLink="/FZ25">
-      <mat-card>
-        <img class="images" src="../../../../assets/arts/fz25.webp">
-      </mat-card>
-    </a>
-    <a class="nav-link" routerLink="/FZ">
-      <mat-card>
-        <img class="images" src="../../../../assets/arts/fz.webp">
-      </mat-card>
-    </a>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
   </mat-drawer-content>
 </mat-drawer-container>

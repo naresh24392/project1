@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RidersService } from 'src/app/riders.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-events',
@@ -8,12 +8,26 @@ import { RidersService } from 'src/app/riders.service';
 })
 
 export class EventsComponent implements OnInit {
-  events: any[];
-  constructor(private _events: RidersService) {
+
+  models = [
+    {"id": 1, "name": "R3", "img": 'assets/arts/R3a.jpg'},
+    {"id": 2, "name": "R15","img": 'assets/arts/r15v3.jfif'},
+    {"id": 3, "name": "MT15","img": 'assets/arts/mt15.jfif'},
+    {"id": 4, "name": "FZ25","img": 'assets/arts/fz25.webp'},
+    {"id": 5, "name": "FZ","img": 'assets/arts/fz.webp'}
+  ]
+  model: any;
+
+  constructor(private router: Router) 
+  {
   }
   ngOnInit() {
-    this.events = this._events.getRidersDetails();
-  }
-}
+  } 
 
+  onSelect(model: any)
+  {
+    this.router.navigate(['/events/model', model.id]);
+  }
+
+}
 
